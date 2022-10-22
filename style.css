@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Styling CSS */
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #454040;
+}
+
+body {
+  background-color: #e0b1cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan img {
+  height: 220px;
+  width: 220px;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e9ecef;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+figcaption {
+  color: #848383;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #7e51b9;
+}
+
+.pricing-features-item {
+  border-bottom: 1px solid #e9ecef;
+  padding: 15px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pricing-features-item:first-child {
+  border-top: 1px solid #e9ecef;
+}
+
+#personal-disc,
+.pricing-features-item.dent {
+  text-decoration: line-through;
+  color: #d2baf0;
+}
+
+.pricing-price {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #6e38b6;
+}
+
+.pricing-price span {
+  text-transform: lowercase;
+}
+
+.pricing-button {
+  border: 1px solid #aa81e0;
+  border-radius: 10px;
+  color: #814cc6;
+  display: inline-block;
+  padding: 16px 35px;
+  text-decoration: none;
+  margin: 15px 0;
+  transition: background-color 400ms ease-in-out;
+}
+
+.pricing-button:focus,
+.pricing-button:hover {
+  background-color: #f0daf3;
+}
+
+.pricing-button.recommended {
+  background-color: #8c52da;
+  color: #fff;
+}
+
+.pricing-button.recommended:focus,
+.pricing-button.recommended:hover {
+  background-color: #6932b0;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #aa81e0;
+    padding: 12px 40px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
