@@ -1,2 +1,2 @@
-# Sample medical pricing panel
-https://kewinpyza.github.io/pricing-panel/
+# Medical pricing panel
+https://pricing-panel-kewinpyza.netlify.app/
